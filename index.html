@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katseye member club</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <linkhref="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: #000000;
+        color: rgb(0, 0, 0);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 40px 20px;
+        background-image: url("https://www.datocms-assets.com/39109/1728662312-katseye-cover-image.jpg?auto=format%2Ccompress&cs=srgb");
+        background-size: cover;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #aaa;
+    }
+
+    form {
+        margin-top: 25px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        margin: 6px;
+        width: 220px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background-color: #222;
+        color: white;
+    }
+
+    input[type="button"] {
+        padding: 10px 25px;
+        margin-top: 10px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+        background-color: #ccc;
+    }
+
+    #result {
+        margin-top: 20px;
+        color: deepskyblue;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="reactor"> </div>
+        <h1> Katseye Members Club</h1>
+        <p> This is a club for the Katseye members</p>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="Enter your first name"> <br>
+            <input type="text" id="last_name" placeholder="Enter your last name"> <br>
+            <input type="button" py-click="candiate_checker" value="Enter"> 
+            </form>
+            <div id="result"> </div>
+        </main>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
